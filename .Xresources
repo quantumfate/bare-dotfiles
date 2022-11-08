@@ -26,7 +26,7 @@ URxvt.depth:             32
 !URxvt.transparent:      true
 URxvt.shading:           80
 URxvt.underlineColor:    #4682B4
-URxvt.highlightColor:    #666666
+URxvt.highlightColor:    #666667
 URxvt.throughColor:      #4682B4
 URxvt.scrollBar:         false
 URxvt.scrollTtyOutput:   false
