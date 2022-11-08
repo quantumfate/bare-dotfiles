@@ -80,7 +80,7 @@ URxvt.background:   [80]#222222
 *.color13:      #b294bb
 
 ! cyan
-*.color6:       #06989a
+*.color6:       #06989b	
 *.color14:      #93e0e3
 
 ! white
