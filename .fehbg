@@ -1,0 +1,2 @@
+#!/bin/sh
+feh --no-fehbg --bg-fill '/home/leonch/.config/variety/wallpaper/wallpaper-auto-rotated-e36208657c7972139448b956f0e2a3b9.jpg' 
