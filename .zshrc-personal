@@ -128,10 +128,12 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=240" # gray highlight
 # SOURCES
 
 # EXPORT VARIABLES
-## JDK Home
-export JDK_HOME="/usr/lib/jvm/java-17-openjdk"
 ## Java Home
-export JAVA_HOME="$JDK_HOME/bin"
+export JAVA_HOME="/usr/lib/jvm/java-17-openjdk"
+## JDK Home
+export JDK_HOME="$JAVA_HOME/bin"
+## Gradle Home
+export GRADLE_USER_HOME="$HOME/.gradle"
 ## Default editor
 export EDITOR="nvim"
 ## Default editor
@@ -140,6 +142,8 @@ export VISUAL="nvim"
 export DOTBARE_DIR="$HOME/.bare-dotfiles"
 ## Dotbare tree
 export DOTBARE_TREE="$HOME"
+## Node version manager
+export NVM_DIR="$HOME/.nvm"
 
 # PATHS
 ## Java
