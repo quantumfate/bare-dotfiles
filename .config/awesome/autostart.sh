@@ -26,6 +26,7 @@ run conky -c $HOME/.config/awesome/system-overview
 feh --bg-fill /usr/share/backgrounds/archlinux/arch-wallpaper.jpg &
 feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
 udiskie -a -s --terminal=Alacrityy
+run xfce4-clipman
 #run applications from startup
 #run firefox
 #run atom

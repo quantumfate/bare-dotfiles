@@ -132,11 +132,11 @@ local virtualmachine    = "virtualbox"
 -- awesome variables
 awful.util.terminal = terminal
 awful.util.tagnames = {  "➊", "➋", "➌", "➍", "➎", "➏", "➐", "➑", "➒" }
---awful.util.tagnames = { "⠐", "⠡", "⠲", "⠵", "⠻", "⠿" }
---awful.util.tagnames = { "⌘", "♐", "⌥", "ℵ" }
---awful.util.tagnames = { "www", "edit", "gimp", "inkscape", "music" }
+-- awful.util.tagnames = { "⠐", "⠡", "⠲", "⠵", "⠻", "⠿" }
+-- awful.util.tagnames = { "⌘", "♐", "⌥", "ℵ" }
+-- awful.util.tagnames = { "www", "edit", "gimp", "inkscape", "music" }
 -- Use this : https://fontawesome.com/cheatsheet
---awful.util.tagnames = { "", "", "", "", "" }
+-- awful.util.tagnames = { "", "", "", "", "" }
 awful.layout.suit.tile.left.mirror = true
 awful.layout.layouts = {
     awful.layout.suit.tile,
@@ -453,12 +453,8 @@ globalkeys = my_table.join(
     --    {description = "Xlunch app launcher", group = "altkey"}),
 
     -- screenshots
-    awful.key({ }, "Print", function () awful.util.spawn("scrot 'ArcoLinux-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'") end,
-        {description = "Scrot", group = "screenshots"}),
-    awful.key({ modkey1           }, "Print", function () awful.util.spawn( "xfce4-screenshooter" ) end,
+    awful.key({ modkey, "Shift"  }, "c", function () awful.util.spawn( "xfce4-screenshooter -r -c" ) end,
         {description = "Xfce screenshot", group = "screenshots"}),
-    awful.key({ modkey1, "Shift"  }, "Print", function() awful.util.spawn("gnome-screenshot -i") end,
-        {description = "Gnome screenshot", group = "screenshots"}),
 
     -- Personal keybindings}}}
 
@@ -669,12 +665,13 @@ globalkeys = my_table.join(
               --{description = "show weather", group = "widgets"}),
 
     -- Brightness
-    awful.key({ }, "XF86MonBrightnessUp", function () os.execute("xbacklight -inc 10") end,
-              {description = "+10%", group = "hotkeys"}),
-    awful.key({ }, "XF86MonBrightnessDown", function () os.execute("xbacklight -dec 10") end,
-              {description = "-10%", group = "hotkeys"}),
-
+    awful.key({ }, "XF86MonBrightnessUp", function () awful.spawn.with_shell("$HOME/.scripts/Brightness/changebrightness up") end,
+    {description = "Brightness up", group = "hotkeys"}),
+    awful.key({ }, "XF86MonBrightnessDown", function () awful.spawn.with_shell("$HOME/.scripts/Brightness/changebrightness down") end,
+    {description = "Brightness down", group = "hotkeys"}),
     -- ALSA volume control
+
+
     --awful.key({ modkey1 }, "Up",
     awful.key({ }, "XF86AudioRaiseVolume",
         function ()
