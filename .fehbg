@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-fill '/usr/share/backgrounds/arcolinux/arco-wallpaper.jpg' 
+feh --no-fehbg --bg-fill '/home/leonch/.config/variety/wallpaper/wallpaper-auto-rotated-2e21adda07eccb00a7e6e90f19c601a0.jpg' 
