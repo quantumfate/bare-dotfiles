@@ -55,7 +55,7 @@
           "key": "t t",
           "name": "Go to type definiton",
           "command": "editor.action.goToTypeDefinition",
-          "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+          "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor && neovim.mode != 'insert'"
         },
         {
           "key": "shift+Tab",
@@ -785,10 +785,10 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "pythonTestExplorer.testFramework": "pytest",
-  "editor.fontSize": 15,
+  "editor.fontSize": 18,
   "scm.inputFontSize": 15,
   "debug.console.fontSize": 15,
-  "editor.fontFamily": "'Roboto Nerd Font', 'monospace', monospace",
+  "editor.fontFamily": "'Inconsolata Nerd Font', 'regular', regular",
   "[python]": {
     "editor.defaultFormatter": "ms-python.python"
   },
@@ -1119,5 +1119,6 @@
       "when": "editorTextFocus && neovim.ctrlKeysNormal && neovim.init && neovim.mode != 'insert'"
     }
   ],
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "Lua.telemetry.enable": true
 }
