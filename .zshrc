@@ -480,3 +480,4 @@ compinit
 autoload bashcompinit
 bashcompinit
 source ~/.devon/autocomplete
+source ~/.zshrc.local

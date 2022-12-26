@@ -10,6 +10,7 @@ function run() {
   else
     # output an error message if the program is not installed or executable
     echo "Error: program $1 is not installed or executable."
+    echo $1 >> notinstalled
   fi
 }
 run nm-applet
@@ -26,7 +27,8 @@ run volumeicon
 run conky -c $HOME/.config/awesome/system-overview
 #you can set wallpapers in themes as well
 run feh --bg-fill /home/leonch/.config/awesome/wallpaper/arcolinux-wallpapers.jpg &
-run udiskie -a -s --terminal=Alacrityy
+run udiskie -a -s --terminal=Alacrity
+run pdfwatcher
 #run applications from startup
 #run firefox
 #run atom

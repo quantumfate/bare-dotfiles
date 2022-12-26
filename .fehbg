@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-fill '/usr/share/backgrounds/arcolinux/arco-wallpaper.jpg' 
+feh --no-fehbg --bg-fill '/home/leonch/.config/awesome/wallpaper/arcolinux-wallpapers.jpg' 
