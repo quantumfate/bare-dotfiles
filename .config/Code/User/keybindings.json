@@ -55,7 +55,8 @@
   },
   {
     "key": "q q",
-    "command": "workbench.action.closeActiveEditor"
+    "command": "workbench.action.closeActiveEditor",
+    "when": "editorTextFocus && !isInEmbeddedEdito && neovim.mode != 'insert'"
   },
   {
     "key": "ctrl+w",
