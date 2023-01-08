@@ -1,4 +1,4 @@
-#files: 997	version: 5.9
+#files: 1002	version: 5.9
 
 _comps=(
 '-' '_precommand'
@@ -295,6 +295,8 @@ _comps=(
 'dmesg' '_dmesg'
 'dmidecode' '_dmidecode'
 'doas' '_doas'
+'docker' '_docker'
+'dockerd' '_docker'
 'docpad' '_docpad'
 'domainname' '_yp'
 'dos2unix' '_dos2unix'
@@ -638,6 +640,7 @@ _comps=(
 'head' '_head'
 'heat' '_openstack'
 'hello' '_hello'
+'helm' '_helm'
 'help' '_sccs'
 'hexdump' '_hexdump'
 'hilite' '_precommand'
@@ -733,6 +736,7 @@ _comps=(
 'ksh' '_sh'
 'ksh88' '_sh'
 'ksh93' '_sh'
+'kubectl' '_kubectl'
 'kvno' '_kvno'
 'last' '_last'
 'lastb' '_last'
@@ -1863,25 +1867,26 @@ bindkey '^[,' _history-complete-newer
 bindkey '^[/' _history-complete-older
 bindkey '^[~' _bash_complete-word
 
-autoload -Uz _afew _alacritty _android _archinstallscripts _archlinux-java \
-            _artisan _atach _autorandr _bat _bitcoin-cli \
-            _black _blackd _bluetoothctl _bootctl _bower \
-            _btm _bundle _busctl _bwrap _caffeinate \
-            _cap _cask _ccache _cf _checkupdates \
-            _choc _chromium _cmake _code _coffee \
-            _composer _conan _concourse _console _coredumpctl \
-            _cppcheck _cpu-x _curl _dad _debuild \
-            _dget _dhcpcd _diana _docpad _downgrade \
-            _drush _ecdsautil _email-notmuch _emulator _envdir \
-            _exportfs _fab _fail2ban-client _ffind _flatpak \
-            _fleetctl _flutter _foot _footclient _force \
-            _fwupdmgr _gas _ghc _gist _git-flow \
-            _git-journal _git-pulls _git-revise _git-wtf _glances \
-            _golang _google _gpgconf _gtk-launch _hello \
-            _hledger _homestead _hostnamectl _httpie _ibus \
-            _include-what-you-use _inxi _jmeter _jmeter-plugins _jonas \
-            _journalctl _jrnl _kak _kernel-install _kitchen \
-            _kitty _knife _language_codes _lf _libinput \
+autoload -Uz _helm _kubectl _afew _alacritty _android \
+            _archinstallscripts _archlinux-java _artisan _atach _autorandr \
+            _bat _bitcoin-cli _black _blackd _bluetoothctl \
+            _bootctl _bower _btm _bundle _busctl \
+            _bwrap _caffeinate _cap _cask _ccache \
+            _cf _checkupdates _choc _chromium _cmake \
+            _code _coffee _composer _conan _concourse \
+            _console _coredumpctl _cppcheck _cpu-x _curl \
+            _dad _debuild _dget _dhcpcd _diana \
+            _docker _docpad _downgrade _drush _ecdsautil \
+            _email-notmuch _emulator _envdir _exportfs _fab \
+            _fail2ban-client _ffind _flatpak _fleetctl _flutter \
+            _foot _footclient _force _fwupdmgr _gas \
+            _ghc _gist _git-flow _git-journal _git-pulls \
+            _git-revise _git-wtf _glances _golang _google \
+            _gpgconf _gtk-launch _hello _helm _hledger \
+            _homestead _hostnamectl _httpie _ibus _include-what-you-use \
+            _inxi _jmeter _jmeter-plugins _jonas _journalctl \
+            _jrnl _kak _kernel-install _kitchen _kitty \
+            _knife _kubectl _language_codes _lf _libinput \
             _lilypond _localectl _loginctl _lunchy _machinectl \
             _mako _makoctl _mc _meson _middleman \
             _mina _mix _mkinitcpio _mpv _mssh \

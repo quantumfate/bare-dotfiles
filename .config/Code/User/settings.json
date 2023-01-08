@@ -1122,5 +1122,6 @@
   "editor.minimap.enabled": false,
   "Lua.telemetry.enable": true,
   "gitHistory.includeRemoteBranches": true,
-  "ansible.executionEnvironment.containerEngine": "docker"
+  "ansible.executionEnvironment.containerEngine": "docker",
+  "explorer.confirmDragAndDrop": false
 }
