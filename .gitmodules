@@ -1,0 +1,3 @@
+[submodule "/home/leonch/.config/hypr"]
+	path = /home/leonch/.config/hypr
+	url = git@github.com:quantumfate/hypr.git
