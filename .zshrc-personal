@@ -112,6 +112,12 @@ alias "dfh"="df -h | grep -v docker"
 alias "ubuntu-release"="lsb_release -a"
 alias "lsdot"="dotbare ls-files"
 alias "udot"="dotbare add --update"
+alias "sdot"="dotbare status -s"
+alias "pdot"="dotbare push"
+alias "lsgit"="git ls-files"
+alias "ugit"="git add --update"
+alias "sgit"="git status -s"
+alias "pgit"="git push"
 
 # fzf
 export FZF_TMUX=0
@@ -128,6 +134,8 @@ ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=15
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=240" # gray highlight
 
 # SOURCES
+## Custom Functions 
+source "$HOME/.scripts/customfunctions"
 
 # EXPORT VARIABLES
 ## Java Home
@@ -150,6 +158,8 @@ export NVM_DIR="$HOME/.nvm"
 # PATHS
 ## Java
 export PATH="${PATH}:$JAVA_HOME"
+## All scripts
+export PATH="${PATH}:$HOME/.scripts/**/*.sh"
 
 source /etc/profile
 
