@@ -7,3 +7,6 @@
 [submodule ".fonts/nerd-fronts"]
 	path = .fonts/nerd-fronts
 	url = git@github.com:ryanoasis/nerd-fonts.git
+[submodule "Office/ansible/arcomate"]
+	path = Office/ansible/arcomate
+	url = git@github.com:quantumfate/arcomate.git
