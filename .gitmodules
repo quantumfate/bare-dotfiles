@@ -10,3 +10,6 @@
 [submodule "Office/ansible/arcomate"]
 	path = Office/ansible/arcomate
 	url = git@github.com:quantumfate/arcomate.git
+[submodule ".config/hypr"]
+	path = .config/hypr
+	url = git@github.com:quantumfate/hypr.git
