@@ -1,3 +1,0 @@
-source $HOME/.scripts/customfunctions.sh
-# add all scripts to path
-export PATH=$PATH:~/.scripts/**/*.sh

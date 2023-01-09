@@ -110,7 +110,7 @@ bindkey '^@dso' fzf-docker-stop-containers
 alias "apt-update-list-upgrade"="apt update && apt upgrade --dry-run | grep Inst | sort | fzf && apt upgrade"
 alias "dfh"="df -h | grep -v docker"
 alias "ubuntu-release"="lsb_release -a"
-alias "lsdot"="dotbare ls-files"
+alias "ranger"="ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR""
 alias "udot"="dotbare add --update"
 alias "sdot"="dotbare status -s"
 alias "pdot"="dotbare push"
