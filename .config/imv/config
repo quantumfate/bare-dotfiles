@@ -1,0 +1,6 @@
+# Styling
+[options]
+background = #2e3440
+fullscreen = true
+overlay = true
+overlay_font = Inconsolata Nerd Font:12
