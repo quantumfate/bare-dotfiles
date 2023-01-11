@@ -110,7 +110,6 @@ bindkey '^@dso' fzf-docker-stop-containers
 alias "apt-update-list-upgrade"="apt update && apt upgrade --dry-run | grep Inst | sort | fzf && apt upgrade"
 alias "dfh"="df -h | grep -v docker"
 alias "ubuntu-release"="lsb_release -a"
-alias "ranger"="ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR""
 alias "udot"="dotbare add --update"
 alias "sdot"="dotbare status -s"
 alias "pdot"="dotbare push"
@@ -118,7 +117,7 @@ alias "lsgit"="git ls-files"
 alias "ugit"="git add --update"
 alias "sgit"="git status -s"
 alias "pgit"="git push"
-
+alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 # fzf
 export FZF_TMUX=0
 export FZF_DEFAULT_OPTS="--height 100% --reverse"

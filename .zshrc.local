@@ -1,0 +1,1 @@
+alias vsvim="nvim -u $HOME/.config/vsvim/init.vim"

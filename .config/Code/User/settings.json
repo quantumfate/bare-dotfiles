@@ -1,14 +1,14 @@
 {
   "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
   "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
-  "vscode-neovim.neovimInitVimPaths.darwin": "$HOME/.config/nvim/init.vim",
-  "vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/nvim/init.vim",
+  "vscode-neovim.neovimInitVimPaths.darwin": "$HOME/.config/nvim/init.lua",
+  "vscode-neovim.neovimIn/*  */itVimPaths.linux": "$HOME/.config/nvim/init.vim",
   "whichkey.sortOrder": "alphabetically",
   "whichkey.bindings": [
     {
       "key": "g c",
-      "command": "workbench.action.addComment",
-      "when": "editorTextFocus && neovim.init && neovim.mode != 'insert'"
+      "command": "workbench.action.addcomment",
+      "when": "editortextfocus && neovim.init && neovim.mode != 'insert'"
     },
     {
       "key": ";",
@@ -763,8 +763,6 @@
       "terminal.ansiBrightYellow": "#d19a66"
     }
   },
-
-  "workbench.colorTheme": "Nord",
   "redhat.telemetry.enabled": true,
   "files.associations": {
     "*.yml": "ansible-jinja"
@@ -1123,5 +1121,25 @@
   "Lua.telemetry.enable": true,
   "gitHistory.includeRemoteBranches": true,
   "ansible.executionEnvironment.containerEngine": "docker",
-  "explorer.confirmDragAndDrop": false
+  "explorer.confirmDragAndDrop": false,
+  "vscode-neovi.mouseSelectionStartVisualMode": true,
+  "vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/nvim/init.lua",
+  "vscode-neovim.mouseSelectionStartVisualMode": true,
+  "vscode-neovim.highlightGroups.highlights": {
+    "Directory": "vim",
+    "IncSearch": {
+      "backgroundColor": "theme.editor.findMatchBackground",
+      "borderColor": "theme.editor.findMatchBorder"
+    },
+    "Search": {
+      "backgroundColor": "theme.editor.findMatchHighlightBackground",
+      "borderColor": "theme.editor.findMatchHighlightBorder"
+    },
+    "Visual": {
+      "backgroundColor": "theme.editor.selectionBackground"
+    },
+    "Conceal": "vim",
+    "Substitute": "vim"
+  },
+  "workbench.colorTheme": "Nord"
 }
