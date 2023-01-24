@@ -1141,5 +1141,8 @@
     "Conceal": "vim",
     "Substitute": "vim"
   },
-  "workbench.colorTheme": "Nord"
+  "workbench.colorTheme": "Nord",
+  "[lua]": {
+    "editor.defaultFormatter": "sumneko.lua"
+  }
 }
